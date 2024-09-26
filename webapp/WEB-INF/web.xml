@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+    <servlet>
+        <servlet-name>AuthServlet</servlet-name>
+        <servlet-class>com.Example.AuthServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AuthServlet</servlet-name>
+        <url-pattern>/authenticate</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>OrdersServlet</servlet-name>
+        <servlet-class>com.Example.OrdersServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>OrdersServlet</servlet-name>
+        <url-pattern>/orders</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ProductsServlet</servlet-name>
+        <servlet-class>com.Example.ProductsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProductsServlet</servlet-name>
+        <url-pattern>/products</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ClientsServlet</servlet-name>
+        <servlet-class>com.Example.ClientsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ClientsServlet</servlet-name>
+        <url-pattern>/clients</url-pattern>
+    </servlet-mapping>
+
+</web-app>
